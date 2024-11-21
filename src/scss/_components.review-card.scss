@@ -1,0 +1,24 @@
+.c-review-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-weight: 200;
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &__img {
+    margin-top: -0.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+}

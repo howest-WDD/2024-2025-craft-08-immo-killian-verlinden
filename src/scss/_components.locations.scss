@@ -1,0 +1,23 @@
+.c-locations {
+
+    &__list {
+        margin-bottom: 0;
+    }
+    
+    &__list-item {
+        list-style: none;
+      
+    }
+    &__link {
+        color: $color-black;
+        border-bottom: 2px rgba(0, 0, 0, 0) solid;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            opacity: 1;
+            border-color:  $color-black
+        }
+    }
+}

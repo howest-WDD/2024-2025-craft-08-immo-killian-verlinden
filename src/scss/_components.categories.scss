@@ -1,0 +1,58 @@
+.c-categories {
+    &__subtext {
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+    }
+
+    &__card {
+        overflow:hidden;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 12rem;
+          }
+    
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 1.2rem;
+
+       object-fit: cover;
+        position:relative;
+        z-index: -1;
+        margin-top: -8rem;
+
+      
+
+        &--page {
+            height: 28.5rem;
+            @include media-breakpoint-down(sm) {
+                margin-top: -15rem;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: -15rem;
+        }
+    }
+
+    &__info {
+        color: black;
+        padding: 2rem;
+        line-height: 1;
+
+    }
+}

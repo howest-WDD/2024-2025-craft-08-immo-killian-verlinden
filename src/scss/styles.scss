@@ -1,0 +1,25 @@
+// ****** SETTINGS: Overwrite Bootstrap SASS variables ******
+@import 'settings.bootstrap';
+@import 'settings.colors';
+
+// ****** GENERIC: Import all of Bootstrap's CSS ******
+@import 'bootstrap/scss/bootstrap';
+
+// Write your own SCSS
+// ****** ELEMENTS ******
+@import 'elements';
+// ****** COMPONENTS ******
+@import 'components.immo-card';
+@import 'components.nws-card';
+@import 'components.realtor';
+@import 'components.hero';
+@import 'components.categories';
+@import 'components.locations';
+@import 'components.review-card';
+@import 'components.footer';
+@import 'components.section';
+@import 'components.detail';
+@import 'components.map';
+// ****** UTILITIES ******
+
+@import 'utilities';

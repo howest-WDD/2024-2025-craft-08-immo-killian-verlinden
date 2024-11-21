@@ -1,0 +1,10 @@
+headingLevels:
+  - 3
+  - 4
+name: 'body text'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

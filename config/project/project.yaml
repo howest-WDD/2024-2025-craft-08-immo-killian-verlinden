@@ -1,0 +1,58 @@
+dateModified: 1732202838
+email:
+  fromEmail: voornaam.naam@howest.be
+  fromName: 'Craft Template'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  local:
+    hasUrls: true
+    name: Local
+    settings:
+      path: '@webroot/local'
+    type: craft\fs\Local
+    url: '@web/local'
+meta:
+  __names__:
+    5d45f9f4-7ab7-4459-926d-a8006cad4227: Images # Images
+    10d2260b-dd05-4a49-abb3-800017e15928: 'Craft Template' # Craft Template
+    21d6f9ae-1d22-490e-bd89-d6ded5d514ac: 'body text' # body text
+    35c35080-108d-485f-925f-407a5ab65a22: Cover # Cover
+    955b3b78-0dbd-47ac-9db5-c15151bf0b94: Details # Details
+    1094b8b3-5e0b-4264-b997-5e1e4110a127: House # House
+    19178fcc-602e-4e2e-a2a4-abf44f2ec6a3: House # House
+    1765228e-0ad3-49c0-a7df-f552ada1e942: State # State
+    a3917b41-5b9e-455d-82b1-9867d010e228: 'Body Text' # Body Text
+    bfc5caff-33ac-495a-8336-7abe2887b021: 'Public Schema' # Public Schema
+    d3b42bd7-e7fb-4536-8773-1f5957362b49: Price # Price
+    e2e222ba-6107-4ebe-ba6f-c26cc3a40dd8: 'Plain Text' # Plain Text
+    f6eaef1f-2f88-4856-8eee-c5ae9620f572: 'Craft Template' # Craft Template
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  mapbox:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+    settings:
+      accessToken: null
+      enableJsLogging: true
+      minifyJsFiles: false
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft Template'
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

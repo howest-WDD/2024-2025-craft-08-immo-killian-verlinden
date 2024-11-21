@@ -1,0 +1,15 @@
+.c-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  &--alternate {
+    background-color: $color-accent3;
+  }
+
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  &__content {
+    margin-bottom: 5rem;
+  }
+}

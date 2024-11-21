@@ -1,0 +1,139 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-80-http:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-80-http"
+      tls: false
+      entrypoints:
+        - http-80
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-8025-http:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-3000-http:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-3000-http"
+      tls: false
+      entrypoints:
+        - http-3001
+    
+    
+    
+    
+    
+    
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-80-https:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-443
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-8025-https:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-3000-https:
+      
+      rule: HostRegexp(`2024-2025-craft-04-voorbeeldvite.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "2024-2025-Craft-04-VoorbeeldVite-web-3000-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-3000
+    
+    
+
+  # autodetect won't be needed in Traefik 3 https://github.com/traefik/traefik/pull/9546
+  middlewares:
+    autodetect:
+      contentType:
+        autoDetect: false
+
+  services:
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:80
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:8025
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-3000-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:3000
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:80
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:8025
+    
+    2024-2025-Craft-04-VoorbeeldVite-web-3000-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-2024-2025-Craft-04-VoorbeeldVite-web:3000
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/2024-2025-Craft-04-VoorbeeldVite.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/2024-2025-Craft-04-VoorbeeldVite.key
+

@@ -1,0 +1,68 @@
+.c-hero {
+  background-image: url('img/hero-image.jpeg');
+  background-size: cover;
+  border-radius: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  color: white;
+  position: relative;
+  margin-bottom: 4rem;
+
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+
+  &__text {
+    border: white 1px solid;
+    border-radius: 3.125rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 12vh;
+    width: auto;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    display: inline-block;
+  }
+
+  &__info {
+    background-image: url('img/div-element.svg');
+    background-repeat: no-repeat;
+    color: black;
+    position: absolute;
+    bottom: calc(-1 * (5rem / 2)); // plaats het tov de bottom
+    right: 0px;
+    width: 49vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 1rem 10vw 0 8vw;
+    //added media query
+    @include media-breakpoint-down(md) {
+      background-color: hotpink;
+      width: 80vw;
+    }
+    @include media-breakpoint-down(sm) {
+      background-color: white;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__detail {
+    width: 7rem;
+  }
+
+  &__number {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: -0.3rem;
+  }
+
+  &__label {
+    font-size: 0.8rem;
+  }
+}

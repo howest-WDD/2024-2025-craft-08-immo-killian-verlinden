@@ -1,0 +1,13 @@
+.u-background-grey {
+    background-color: #F9F9F9;
+}
+
+.u-hidden {
+    @include media-breakpoint-down(sm) {
+       display: none;
+    }
+}
+
+.u-underline {
+    text-decoration: underline;
+}

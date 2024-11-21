@@ -1,0 +1,33 @@
+columnSuffix: null
+handle: state
+instructions: null
+name: State
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Sale
+        -
+          - value
+          - sale
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Rent
+        -
+          - value
+          - rent
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

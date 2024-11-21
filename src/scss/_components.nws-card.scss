@@ -1,0 +1,31 @@
+.c-nws-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $color-black;
+  text-decoration: none;
+  &:hover {
+    background-color: $color-accent1;
+    color: $color-black;
+    text-decoration: none;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+  &__imgcontainer {
+    flex-basis: 33%;
+  }
+  &__symbol {
+    max-width: 100%;
+  }
+  &__title {
+    border-bottom: thin solid #ccc;
+    color: $color-black;
+  }
+  &__description {
+    flex-basis: 66%;
+    flex-grow: 1;
+    padding: 0 0.5rem;
+  }
+}
